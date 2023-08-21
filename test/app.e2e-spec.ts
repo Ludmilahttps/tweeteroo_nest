@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
+import { HttpStatus, INestApplication, ValidationPipe } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from './../src/app.module';
-import { HttpStatus, INestApplication, ValidationPipe } from '@nestjs/common';
 import { signUpUser } from './factories/signup-user';
 import { tweetFromUser } from './factories/tweet-from-user';
 
